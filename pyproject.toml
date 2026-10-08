@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ica-reminder"
+version = "1.0.0"
+description = "Daily desktop (and email) reminder to work on your ICA, fires at 3 PM IST."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "plyer>=2.1.0",
+    "pytz>=2024.1",
+]
+
+[project.scripts]
+ica-reminder = "ica_reminder.reminder:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ica_reminder*"]
