@@ -1,0 +1,4 @@
+plyer>=2.1.0
+pytz>=2024.1
+# No additional packages needed for AI providers —
+# watsonx.ai and OpenAI calls use Python's built-in urllib.
